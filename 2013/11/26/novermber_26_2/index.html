@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>First post @Qingdao | 矛盾论</title>
+  <title>几点Java基础知识（1） | 矛盾论</title>
   <meta name="author" content="Zhezhe Hao">
   
   <meta name="description" content="A Life-Designer">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="First post @Qingdao"/>
+  <meta property="og:title" content="几点Java基础知识（1）"/>
   <meta property="og:site_name" content="矛盾论"/>
 
   
@@ -49,24 +49,36 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2013-11-19T15:41:02.000Z"><a href="/2013/11/19/november-19/">11月 19 2013</a></time>
+        <time datetime="2013-11-26T15:11:17.000Z"><a href="/2013/11/26/novermber_26_2/">11月 26 2013</a></time>
       
       
   
-    <h1 class="title">First post @Qingdao</h1>
+    <h1 class="title">几点Java基础知识（1）</h1>
   
 
     </header>
     <div class="entry">
       
-        <h2>庆祝帖</h2>
-<p>之前搭建Hexo Blog被困在了半路，一直没有找到问题的原因。晚上终于抽时间把Godaddy&amp;Hexo&amp;Github串了一遍，找了一篇参考文章（之后再补上链接），才发现原来DNSPod的A记录指向IP地址填错了。（之前一直指向了Godaddy的IP，原来需要指向Github的IP才可以，汗啊）等到输入<a href="http://zhezhe.me" title="zhezhe.me"><a href="http://zhezhe.me">http://zhezhe.me</a></a>发现终于可以跳转之后，真的是欣喜若狂，喜大普奔。技术的魅力就在于此，靠自己不断摸索，哪怕只是一个小问题，能够自己动手解决，都是一种莫大的满足。</p>
+        <p>晚上继续学习Android基础，看到了Intent传递变量。对于ADT的内容更进一步认识，隐约中似懂非懂了<code>MainActivity.java</code>，<code>AndroidManifest.xml</code>，<code>activity_main.xml</code>之间的关系。  </p>
+<p>但是对于教程中的Java语法还是不太清楚。虽然之前在大学的时候学过几节Java编程，但是现在留在脑海的也就<code>project</code>，<code>class</code>，<code>public</code>,<code>static</code>这几个关键词。网上搜索了一点资料，再次学习一下Java的基本知识：  </p>
 <a id="more"></a>
 
-<h2>今天的流水</h2>
-<p>来青岛的第二周了，还是没有接到入职的通知，继续等。<br>今天《地心引力》上映，期待已久的影片。中午从美团团了3张电影票兑换一张IMAX。看完可能是因为之前的预期太高，没有惊喜不过也不失望。总之是还值得一看的影片。<br>看完电影，从万达广场走到了青岛理工。来青岛这几天才开始寻觅踢球的地方，昨天去了青岛大学，大失所望。今天去青岛理工总算找到了之后的场地。穿着一身非正式服装上去守了一会门。看着满学校走着的学生，多羡慕他们现在的无知无畏无所事事。<br>晚上回来自己做了顿饭，第二次辣椒炒鸡蛋还是没有达到预期。买的电饭煲终于开火做了第一次小米粥。<br>一边吃饭一边看国家队和沙特的比赛，刚开始心中就嘀咕，好像我看国家队比赛还没有结果好的，估计今天的结果也好不哪去。果然不出意外，打了个平局。以后还是只看看结果吧。  </p>
-<h2>后记</h2>
-<p>Blog搭起来了，后面就多谢谢文章吧。记录一下在青岛的点滴，也沉淀一下自己。</p>
+<ul>
+<li>Jave的<code>package</code>和<code>import</code>机制，参考<a href="http://blog.sina.com.cn/s/blog_5fb298fa0100ecvx.html" target="_blank">这篇Blog</a>。</li>
+<li><code>public</code>和<code>private</code>的区别：<code>public</code>声明的内容在任何地方都可以调用；<code>private</code>声明对的内容只有在当前类中被调用。（虽然我还是不太清楚什么时候用，暂时都先用<code>public</code>吧）</li>
+<li>Java8种基本数据类型：<code>byte</code>、<code>int</code>、<code>long</code>、<code>double</code>、<code>char</code>、<code>boolean</code>、<code>float</code>、<code>short</code>。</li>
+<li><code>String</code>不是基本数据类型。具体使用方法可以参考<a href="http://blog.csdn.net/fetch001/article/details/7561453" target="_blank">这篇Blog</a>。</li>
+<li>Java对大小写敏感，类、方法和变量命名的时候需要注意。基本命名规范如下：<ul>
+<li>包名：多单词组成是全部为小写字母。例如<code>package com.santigaohz.test1;</code>。</li>
+<li>类名和接口名：单词首字母都需要大写，例如<code>public class MainActivity</code>。</li>
+<li>变量名和函数名：驼峰命名，例如<code>protected void onCreate(Bundle savedInstanceState)</code></li>
+<li>常量名：所有字母都大写。多个单词组成时，用下划线（“_”）连接。如<code>MAX_VALUE</code></li>
+</ul>
+</li>
+<li>Java语句需要以<code>;</code>结尾。</li>
+<li>Debug：设置断点-&gt;单步执行-&gt;观察变量。</li>
+</ul>
+<p>今天先到这，明天继续。</p>
 
       
     </div>
@@ -75,10 +87,15 @@
         
   
   <div class="categories">
-    <a href="/categories/随感/">随感</a>
+    <a href="/categories/Coding/">Coding</a>
   </div>
 
         
+  
+  <div class="tags">
+    <a href="/tags/Android/">Android</a>, <a href="/tags/Java/">Java</a>
+  </div>
+
 
 		<!-- Baidu Button BEGIN -->
         <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
