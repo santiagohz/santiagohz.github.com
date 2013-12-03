@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>About Me | 矛盾论</title>
+  <title>几点Java基础知识（1） | 矛盾论</title>
   <meta name="author" content="Zhezhe Hao">
   
   <meta name="description" content="A Life-Designer">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="About Me"/>
+  <meta property="og:title" content="几点Java基础知识（1）"/>
   <meta property="og:site_name" content="矛盾论"/>
 
   
@@ -43,43 +43,59 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="page">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
   <div class="post-content">
     <header>
       
+        <div class="icon"></div>
+        <time datetime="2013-11-26T15:11:17.000Z"><a href="/2013/11/26/novermber_26_2_java_01/">11月 26 2013</a></time>
+      
       
   
-    <h1 class="title">About Me</h1>
+    <h1 class="title">几点Java基础知识（1）</h1>
   
 
     </header>
     <div class="entry">
       
-        <p><img src="http://ww2.sinaimg.cn/large/627e04b6tw1eatsfh23e7j20280280sj.jpg" alt="This&#39;s me"></p>
-<h2><strong>A Life-Designer</strong></h2>
+        <p>晚上继续学习Android基础，看到了Intent传递变量。对于ADT的内容更进一步认识，隐约中似懂非懂了<code>MainActivity.java</code>，<code>AndroidManifest.xml</code>，<code>activity_main.xml</code>之间的关系。  </p>
+<p>但是对于教程中的Java语法还是不太清楚。虽然之前在大学的时候学过几节Java编程，但是现在留在脑海的也就<code>project</code>，<code>class</code>，<code>public</code>,<code>static</code>这几个关键词。网上搜索了一点资料，再次学习一下Java的基本知识：  </p>
+<a id="more"></a>
+
 <ul>
-<li>Fighting in <s>Beijing</s> Qingdao</li>
-<li>Working @ <s>Renn</s> Hisense</li>
-<li>PM for <s>Mobile</s> IPTV</li>
-<li>Complex of MP3/Movie/Football    </li>
+<li>Jave的<code>package</code>和<code>import</code>机制，参考<a href="http://blog.sina.com.cn/s/blog_5fb298fa0100ecvx.html" target="_blank">这篇Blog</a>。</li>
+<li><code>public</code>和<code>private</code>的区别：<code>public</code>声明的内容在任何地方都可以调用；<code>private</code>声明对的内容只有在当前类中被调用。（虽然我还是不太清楚什么时候用，暂时都先用<code>public</code>吧）</li>
+<li>Java8种基本数据类型：<code>byte</code>、<code>int</code>、<code>long</code>、<code>double</code>、<code>char</code>、<code>boolean</code>、<code>float</code>、<code>short</code>。</li>
+<li><code>String</code>不是基本数据类型。具体使用方法可以参考<a href="http://blog.csdn.net/fetch001/article/details/7561453" target="_blank">这篇Blog</a>。</li>
+<li>Java对大小写敏感，类、方法和变量命名的时候需要注意。基本命名规范如下：<ul>
+<li>包名：多单词组成是全部为小写字母。例如<code>package com.santigaohz.test1;</code>。</li>
+<li>类名和接口名：单词首字母都需要大写，例如<code>public class MainActivity</code>。</li>
+<li>变量名和函数名：驼峰命名，例如<code>protected void onCreate(Bundle savedInstanceState)</code></li>
+<li>常量名：所有字母都大写。多个单词组成时，用下划线（“_”）连接。如<code>MAX_VALUE</code></li>
 </ul>
-<h2><strong>Working Experience</strong></h2>
-<ul>
-<li>2013.12-Now &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Hisense</strong> Qingdao</li>
-<li>2011.07-2013.10 <strong>Renn</strong> Beijing</li>
+</li>
+<li>Java语句需要以<code>;</code>结尾。</li>
+<li>Debug：设置断点-&gt;单步执行-&gt;观察变量。</li>
 </ul>
-<h2><strong>Contact Me</strong></h2>
-<ul>
-<li>Email: haozhehary#gmail.com</li>
-</ul>
+<p>今天先到这，明天继续。</p>
 
       
     </div>
     <footer>
       
         
+  
+  <div class="categories">
+    <a href="/categories/Coding/">Coding</a>
+  </div>
+
         
+  
+  <div class="tags">
+    <a href="/tags/Android/">Android</a>, <a href="/tags/Java/">Java</a>
+  </div>
+
 
 		<!-- Baidu Button BEGIN -->
         <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
