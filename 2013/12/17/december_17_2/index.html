@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>生病日记 | 矛盾论</title>
+  <title>为Hexo增加Google Analytics | 矛盾论</title>
   <meta name="author" content="Zhezhe Hao">
   
   <meta name="description" content="A Life-Designer">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="生病日记"/>
+  <meta property="og:title" content="为Hexo增加Google Analytics"/>
   <meta property="og:site_name" content="矛盾论"/>
 
   
@@ -49,19 +49,27 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2013-12-17T13:47:17.000Z"><a href="/2013/12/17/december_17/">12月 17 2013</a></time>
+        <time datetime="2013-12-17T14:58:17.000Z"><a href="/2013/12/17/december_17_2/">12月 17 2013</a></time>
       
       
   
-    <h1 class="title">生病日记</h1>
+    <h1 class="title">为Hexo增加Google Analytics</h1>
   
 
     </header>
     <div class="entry">
       
-        <p><img src="http://zhezhe-album.u.qiniudn.com/%E7%94%9F%E7%97%85%E6%97%A5%E8%AE%B0.jpg" alt="有时候，就像这样" title="你有没有过这样的时刻？"><br>今天凌晨又突发急性肠胃炎，再次体会生不如死的感觉。肠胃痛如针扎，一个人瘫坐在马桶上，那一瞬间的感觉真的好孤独，好伤心。不得不承认自己也有软弱的一面。  </p>
-<p>也在那一瞬间，想找一个人陪的愿望竟然如此强烈。恰好前两天刚看完《我们结婚吧》，看到电视里面的爱情故事，越发多了几分羡慕与期待。  </p>
-<p>愿上天怜悯我，给我指引两个人的生活。</p>
+        <p>今天计划把Blog的统计加上，还是用Google Analytics。步骤如下：  </p>
+<ol>
+<li><p>注册Google Analytics账号，地址在<a href="http://www.google.com/analytics/" target="_blank">Google Analytics</a>。 </p>
+</li>
+<li><p>在Analytics中添加自己的网站域名，比如<code>zhezhe.me</code>，获取JS代码。</p>
+</li>
+<li><p>把JS代码Copy到Hexo的<code>after_footer</code>文件中，<code>after_footer</code>是Hexo主题页脚的JS代码文档，具体位置在<code>\themes\light\layout\_partial</code>。</p>
+</li>
+<li><p>保存文件，重新生成、部署Hexo。数据统计不会立即生效，需要等待几个小时，之后登录<a href="http://www.google.com/analytics/" target="_blank">Google Analytics</a>就可以查看你的Blog的数据。</p>
+</li>
+</ol>
 
       
     </div>
@@ -70,10 +78,15 @@
         
   
   <div class="categories">
-    <a href="/categories/随感/">随感</a>
+    <a href="/categories/Coding/">Coding</a>
   </div>
 
         
+  
+  <div class="tags">
+    <a href="/tags/Hexo/">Hexo</a>, <a href="/tags/Google/">Google</a>
+  </div>
+
 
 		<!-- Baidu Button BEGIN -->
         <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
@@ -128,7 +141,7 @@ var duoshuoQuery = {short_name:"santiagohz"};
   <h3 class="title">分类</h3>
   <ul class="entry">
   
-    <li><a href="/categories/Coding/">Coding</a><small>3</small></li>
+    <li><a href="/categories/Coding/">Coding</a><small>4</small></li>
   
     <li><a href="/categories/产品/">产品</a><small>5</small></li>
   
@@ -146,6 +159,10 @@ var duoshuoQuery = {short_name:"santiagohz"};
     <li><a href="/tags/Android/">Android</a><small>2</small></li>
   
     <li><a href="/tags/Axure/">Axure</a><small>1</small></li>
+  
+    <li><a href="/tags/Google/">Google</a><small>1</small></li>
+  
+    <li><a href="/tags/Hexo/">Hexo</a><small>1</small></li>
   
     <li><a href="/tags/Java/">Java</a><small>2</small></li>
   
