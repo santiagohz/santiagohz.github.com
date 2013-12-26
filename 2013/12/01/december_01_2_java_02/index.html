@@ -43,7 +43,26 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><div class="alignright">
+<a href="#" id="returnTop" 
+     style="text-decoration:none; bottom:0px; position:fixed; text-align:center; width:14px; margin:8px;"
+     onclick="javascript:$('html, body').animate({scrollTop: 0}, {queue:false, duration:10});">↑回顶部</a>
+</div>
+
+<script type="text/javascript">
+$(function(){
+    $(window).scroll(function () {
+        if ($(document).scrollTop() >= 100) {
+            $('#returnTop').animate({bottom: "105px"}, { queue: false, duration: 10 }); 
+        } else {
+            $('#returnTop').animate({bottom: "-100px"}, { queue: false, duration: 10 }); 
+        }   
+    }); 
+}); 
+</script>
+
+<article class="post">
+
   
   <div class="post-content">
     <header>
@@ -56,6 +75,7 @@
     <h1 class="title">几点Java基础知识（2）</h1>
   
 
+	 
     </header>
     <div class="entry">
       
@@ -142,7 +162,7 @@ var duoshuoQuery = {short_name:"santiagohz"};
   <h3 class="title">分类</h3>
   <ul class="entry">
   
-    <li><a href="/categories/Coding/">Coding</a><small>5</small></li>
+    <li><a href="/categories/Coding/">Coding</a><small>6</small></li>
   
     <li><a href="/categories/产品/">产品</a><small>7</small></li>
   
@@ -163,7 +183,7 @@ var duoshuoQuery = {short_name:"santiagohz"};
   
     <li><a href="/tags/Google/">Google</a><small>1</small></li>
   
-    <li><a href="/tags/Hexo/">Hexo</a><small>2</small></li>
+    <li><a href="/tags/Hexo/">Hexo</a><small>3</small></li>
   
     <li><a href="/tags/Java/">Java</a><small>2</small></li>
   
