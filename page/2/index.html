@@ -69,6 +69,68 @@ $(function(){
     <header>
       
         <div class="icon"></div>
+        <time datetime="2013-12-17T14:58:17.000Z"><a href="/2013/12/17/december_17_2/">12月 17 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/12/17/december_17_2/">为Hexo增加Google Analytics</a></h1>
+  
+
+	 
+    </header>
+    <div class="entry">
+      
+        <p>今天计划把Blog的统计加上，还是用Google Analytics。步骤如下：  </p>
+<ol>
+<li><p>注册Google Analytics账号，地址在<a href="http://www.google.com/analytics/" target="_blank">Google Analytics</a>。 </p>
+</li>
+<li><p>在Analytics中添加自己的网站域名，比如<code>zhezhe.me</code>，获取JS代码。</p>
+</li>
+<li><p>把JS代码Copy到Hexo的<code>after_footer</code>文件中，<code>after_footer</code>是Hexo主题页脚的JS代码文档，具体位置在<code>\themes\light\layout\_partial</code>。</p>
+</li>
+<li><p>保存文件，重新生成、部署Hexo。数据统计不会立即生效，需要等待几个小时，之后登录<a href="http://www.google.com/analytics/" target="_blank">Google Analytics</a>就可以查看你的Blog的数据。</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <div class="alignright">
+<a href="#" id="returnTop" 
+     style="text-decoration:none; bottom:0px; position:fixed; text-align:center; width:14px; margin:8px;"
+     onclick="javascript:$('html, body').animate({scrollTop: 0}, {queue:false, duration:10});">↑回顶部</a>
+</div>
+
+<script type="text/javascript">
+$(function(){
+    $(window).scroll(function () {
+        if ($(document).scrollTop() >= 100) {
+            $('#returnTop').animate({bottom: "105px"}, { queue: false, duration: 10 }); 
+        } else {
+            $('#returnTop').animate({bottom: "-200px"}, { queue: false, duration: 10 }); 
+        }   
+    }); 
+}); 
+</script>
+
+<article class="post">
+
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2013-12-17T13:47:17.000Z"><a href="/2013/12/17/december_17_1/">12月 17 2013</a></time>
       
       
@@ -578,63 +640,6 @@ $(function(){
 
 
 
-  <div class="alignright">
-<a href="#" id="returnTop" 
-     style="text-decoration:none; bottom:0px; position:fixed; text-align:center; width:14px; margin:8px;"
-     onclick="javascript:$('html, body').animate({scrollTop: 0}, {queue:false, duration:10});">↑回顶部</a>
-</div>
-
-<script type="text/javascript">
-$(function(){
-    $(window).scroll(function () {
-        if ($(document).scrollTop() >= 100) {
-            $('#returnTop').animate({bottom: "105px"}, { queue: false, duration: 10 }); 
-        } else {
-            $('#returnTop').animate({bottom: "-200px"}, { queue: false, duration: 10 }); 
-        }   
-    }); 
-}); 
-</script>
-
-<article class="post">
-
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-12-03T13:53:17.000Z"><a href="/2013/12/03/december_03 _2/">12月 3 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2013/12/03/december_03 _2/">SNS产品的核心</a></h1>
-  
-
-	 
-    </header>
-    <div class="entry">
-      
-        <p><img src="http://ww3.sinaimg.cn/large/627e04b6tw1eb6vku77qyj20ca0ie74i.jpg" alt="下厨房的经典Slogan" title="下厨房作为一个从0做起的SNS社区，按照我的理解是成功的，点赞。希望以后也能做出一样有爱的产品"><br>来到新公司第一个要接手的项目居然还是SNS。之前做了两年多的SNS产品，从人人梦想版到Dubbler，再到最后胎死腹中的Charm，现在回想起之前的种种苦逼，竟然有点暖意上心头。  </p>
-<p>明天计划和新的产品人员做第一次交流，今天先简单理一下我对SNS产品的理解，以作备忘。以后有时间再做详细分析。  </p>
-<p>SNS产品核心我认为有两个（其实大家都这么认为）：<br>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2013/12/03/december_03 _2/#more" class="more-link">Read More...</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
 
 <nav id="pagination">
   
@@ -660,7 +665,7 @@ $(function(){
   
     <li><a href="/categories/Coding/">Coding</a><small>6</small></li>
   
-    <li><a href="/categories/产品/">产品</a><small>9</small></li>
+    <li><a href="/categories/产品/">产品</a><small>10</small></li>
   
     <li><a href="/categories/随感/">随感</a><small>18</small></li>
   
@@ -691,7 +696,7 @@ $(function(){
   
     <li><a href="/tags/互联网电视/">互联网电视</a><small>3</small></li>
   
-    <li><a href="/tags/产品经理培训/">产品经理培训</a><small>5</small></li>
+    <li><a href="/tags/产品经理培训/">产品经理培训</a><small>6</small></li>
   
     <li><a href="/tags/小技巧/">小技巧</a><small>1</small></li>
   
